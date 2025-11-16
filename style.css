@@ -1,0 +1,32 @@
+:root {
+    --primary-bg-color: #949494;
+}
+
+@keyframes CHAT_BAR_HOVER {
+    from {
+        border: 3px solid black;
+        border-radius: 7px;
+    }
+    to {
+        border: 5px solid rgb(147, 72, 182);
+        border-radius: 10px;
+    }
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    font-family: "Sansation", sans-serif;
+}
+
+#chat-text-input {
+    border: 3px solid black;
+    border-radius: 7px;
+    resize: none;
+    outline: 0;
+    min-height: 40px;
+    padding: 5px;
+}
+
+#chat-text-input:focus {
+    outline: 1px solid white;
+}
