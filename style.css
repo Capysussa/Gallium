@@ -8,7 +8,7 @@
         border-radius: 7px;
     }
     to {
-        border: 5px solid rgb(147, 72, 182);
+        border: 5px solid rgb(185, 185, 185);
         border-radius: 10px;
     }
 }
@@ -16,6 +16,9 @@
 body {
     background-color: var(--primary-bg-color);
     font-family: "Sansation", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #chat-text-input {
@@ -25,8 +28,24 @@ body {
     outline: 0;
     min-height: 40px;
     padding: 5px;
+    width: 75%;
+}
+
+#chat-text-input:hover {
+    animation: CHAT_BAR_HOVER 0.5s forwards;
 }
 
 #chat-text-input:focus {
+    border: 5px solid rgb(185, 185, 185);
+    border-radius: 10px;
     outline: 1px solid white;
+}
+
+#chat-messages {
+    min-height: 500px;
+    overflow-y: scroll;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 75%;
 }
