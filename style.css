@@ -21,6 +21,8 @@ body {
     align-items: center;
 }
 
+
+
 #chat-text-input {
     border: 3px solid black;
     border-radius: 7px;
@@ -48,4 +50,32 @@ body {
     border-radius: 20px;
     margin-bottom: 10px;
     width: 75%;
+}
+
+.chatMessage {
+    border: 2px solid black;
+    display: grid;
+    grid-template-areas:
+    "pfp info"
+    "pfp text";
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.chatMessage_info {
+    grid-area: info;
+    font-weight: bolder;
+}
+
+.chatMessage_pfp {
+    grid-area: pfp;
+    width: 50px;
+    height: 50px;
+    margin: 7px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.chatMessage_text {
+    grid-area: text;
 }
